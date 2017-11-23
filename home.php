@@ -35,7 +35,7 @@ if (isset($_SESSION['name'])){
     <div id="overlay">
       <!--Loader-->
 
-      <div class="loader-container">
+      <div class="loader-cntn">
         <svg class="spinner" stroke="#000" width="200" height="200" viewBox="0 0 206 206" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <clipPath id="cut-off-bottom">
@@ -77,7 +77,7 @@ if (isset($_SESSION['name'])){
     <!--Loader-->
   <div class="Menu">
   <a href="index.php">
-    <main class='container'>
+    <main class='cntn'>
       <button class='myButt two'>
         Inicio
       </button>
@@ -86,7 +86,7 @@ if (isset($_SESSION['name'])){
 
 
   <a href="galeria.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt five'>
         	<div class='layer'>ADOPTA!</div>
         		Galeria
@@ -95,7 +95,7 @@ if (isset($_SESSION['name'])){
   </a>
 
   <a href="mejorvida.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt two'>
         		Una Mejor vida
         	</button>
@@ -103,7 +103,7 @@ if (isset($_SESSION['name'])){
   </a>
 
   <a href="login.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt two'>
         	Inicia Sesion
         	</button>
@@ -130,13 +130,13 @@ if (isset($_SESSION['name'])){
 
 
 <!--Contenido-->
-<!--footer-->
-<footer class="footer">
-<div class="Empresafooter">
+<!--ftr-->
+<footer class="ftr">
+<div class="Empresaftr">
   <h4>Una Mejor Vida</h4>
 <img class="logo_perrito"src="images/logo.jpg" width="80" height="80"alt="">
 </div>
-<div class="Seccionesfooter">
+<div class="Seccionesftr">
   <h4>Secciones</h4>
   <ul>
    <li><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicio</a></li>
@@ -144,12 +144,12 @@ if (isset($_SESSION['name'])){
     <li><a href="login.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicia Sesión</a></li>
   </ul>
 </div>
-<div class="Misionfooter">
+<div class="Misionftr">
   <h4>Como somos</h4>
   <a href="mejorvida.php"><i class="fa fa-paw" aria-hidden="true"></i>
    Misión y Historia</a>
 </div>
-<div class="Redesfooter">
+<div class="Redesftr">
   <h4>Siguenos en:</h4>
   <ul>
     <li class="fbicon"><a href="https://www.facebook.com/unamejorvida.ac/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -158,7 +158,7 @@ if (isset($_SESSION['name'])){
   </ul>
 </div>
 </footer>
-<!--footer-->
+<!--ftr-->
 <!--Scripts-->
 <!--Loader-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js'></script>

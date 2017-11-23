@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+ <link href="styles/bootstrap.min.css" rel="stylesheet">
     <script  src="js/index.js"></script>
     <title>Adopta!</title>
   </head>
@@ -31,7 +32,7 @@
     <div id="overlay">
       <!--Loader-->
 
-      <div class="loader-container">
+      <div class="loader-cntn">
         <svg class="spinner" stroke="#000" width="200" height="200" viewBox="0 0 206 206" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <clipPath id="cut-off-bottom">
@@ -75,7 +76,7 @@
 
 <div class="Menu">
 <a href="index.php">
-  <main class='container'>
+  <main class='cntn'>
     <button class='myButt two'>
       Inicio
     </button>
@@ -84,7 +85,7 @@
 
 
 <a href="galeria.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt five'>
       	<div class='layer'>ADOPTA!</div>
       		Galeria
@@ -93,7 +94,7 @@
 </a>
 
 <a href="mejorvida.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       		Una Mejor vida
       	</button>
@@ -101,7 +102,7 @@
 </a>
 
 <a href="login.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       	Inicia Sesion
       	</button>
@@ -115,39 +116,31 @@
   <div class="login-page">
            <h2>Regístrate y registralos</h2>
       <div class="modal-body">
-        <form action="archivo_registrar.php" method="post" enctype="application/x-www-form-urlencoded">
-          <div class="form_uno">
+
+        <form class="form-horizontal my-2 my-lg-0" action="archivo_registrar.php" method="post" enctype="application/x-www-form-urlencoded">
+
             <label for="control2_nombre">Nombre</label>
-            <input type="text" name="datos_registrar_usuario" class="inputs" id="control2_nombre" placeholder="Nombre de usuario" required>
-          </div>
-
-<!--NuevoCampo-->
-          <div class="form_uno">
+            <input type="text" class="form-control form-control-lg" name="datos_registrar_usuario" class="inputs" id="control2_nombre" placeholder="Nombre de usuario" required>
+            <br>
             <label for="control2_ciudad">Ciudad</label>
-            <input type="text" name="datos_registrar_ciudad" class="inputs" id="control2_ciudad" placeholder="Ciudad" required>
-          </div>
-<!--NuevoCampo-->
-
-          <div class="form_uno">
+            <input type="text" class="form-control form-control-lg" name="datos_registrar_ciudad" class="inputs" id="control2_ciudad" placeholder="Ciudad" required>
+            <br>
             <label for="control2_contraseña">Contraseña</label>
-            <input type="password" name="datos_registrar_contraseña" class="inputs" id="control2_contraseña" placeholder="Password" required>
-          </div>
+            <input type="password" class="form-control form-control-lg" name="datos_registrar_contraseña" class="inputs" id="control2_contraseña" placeholder="Password" required>
+
           <!--NuevoCampo-->
           <h3 class="perrodatos">Ingresa sus datos</h3>
-          <div class="form_uno">
+
           <label for="control2_mascota">Nombre de la mascota</label>
-          <input type="text" name="datos_registrar_mascota" class="inputs" id="control2_mascota" placeholder="Nombre" required>
-          </div>
+          <input type="text" class="form-control form-control-lg" name="datos_registrar_mascota" class="inputs" id="control2_mascota" placeholder="Nombre" required>
 
-          <div class="form_uno">
+
           <label for="control2_edad">Edad</label>
-          <input type="number" name="datos_registrar_mascotaedad" class="inputs" id="control2_edad" placeholder="Ingresa solo numero" required>
-          </div>
+          <input type="number" class="form-control form-control-lg" name="datos_registrar_mascotaedad" class="inputs" id="control2_edad" placeholder="Ingresa solo numero" required>
 
-          <div class="form_uno">
           <label for="control2_direccion">Direccion</label>
-          <input type="text" name="datos_registrar_mascotadireccion" class="inputs" id="control2_direccion" placeholder="Ingresa la dirección" required>
-          </div>
+          <input type="text" class="form-control form-control-lg" name="datos_registrar_mascotadireccion" class="inputs" id="control2_direccion" placeholder="Ingresa la dirección" required>
+
           <!--Sube una foto-->
 
           <div class="form_uno">
@@ -155,39 +148,28 @@
           <input type="file" name="imagen_item">
           </div>
           <!--NuevoCampo-->
+          <button class="btn btn-outline-info btn-lrg btn-block my-2 my-sm-0" type="submit">Registrar</button>
 
-                    <button type="submit" class="btnEntrar">Registrar</button>
                   </form>
                 </div>
   </div>
 <!--Acaba modal Registro-->
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 <!--Scripts-->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script  src="js/login.js"></script>
 
-</div>
+
 
 
 <!--Contenido-->
-<!--footer-->
-<footer class="footer">
-<div class="Empresafooter">
+<!--ftr-->
+<footer class="ftr">
+<div class="Empresaftr">
   <h4>Una Mejor Vida</h4>
 <img class="logo_perrito"src="images/logo.jpg" width="80" height="80"alt="">
 </div>
-<div class="Seccionesfooter">
+<div class="Seccionesftr">
   <h4>Secciones</h4>
   <ul>
    <li><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicio</a></li>
@@ -195,12 +177,12 @@
     <li><a href="login.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicia Sesión</a></li>
   </ul>
 </div>
-<div class="Misionfooter">
+<div class="Misionftr">
   <h4>Como somos</h4>
   <a href="mejorvida.php"><i class="fa fa-paw" aria-hidden="true"></i>
    Misión y Historia</a>
 </div>
-<div class="Redesfooter">
+<div class="Redesftr">
   <h4>Siguenos en:</h4>
   <ul>
     <li class="fbicon"><a href="https://www.facebook.com/unamejorvida.ac/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -209,7 +191,7 @@
   </ul>
 </div>
 </footer>
-<!--footer-->
+<!--ftr-->
 <!--Scripts-->
 
 

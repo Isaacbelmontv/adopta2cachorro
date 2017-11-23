@@ -7,6 +7,7 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+ <link href="styles/bootstrap.min.css" rel="stylesheet">
     <script  src="js/index.js"></script>
     <title>Adopta!</title>
   </head>
@@ -31,7 +32,7 @@
     <div id="overlay">
       <!--Loader-->
 
-      <div class="loader-container">
+      <div class="loader-cntn">
         <svg class="spinner" stroke="#000" width="200" height="200" viewBox="0 0 206 206" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <clipPath id="cut-off-bottom">
@@ -75,7 +76,7 @@
 
 <div class="Menu">
 <a href="index.php">
-  <main class='container'>
+  <main class='cntn'>
     <button class='myButt two'>
       Inicio
     </button>
@@ -84,7 +85,7 @@
 
 
 <a href="galeria.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt five'>
       	<div class='layer'>ADOPTA!</div>
       		Galeria
@@ -93,7 +94,7 @@
 </a>
 
 <a href="mejorvida.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       		Una Mejor vida
       	</button>
@@ -101,7 +102,7 @@
 </a>
 
 <a href="login.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       	Inicia Sesion
       	</button>
@@ -113,19 +114,21 @@
 <div class="contenido">
   <div class="login-page">
     <h1 class="login">Login</h1>
-    <form action="archivo_destino.php" method="post" enctype="multipart/form-data">
-      <div class="form">
-        <label for="control1_nombre">Nombre</label>
-        <input type="text" name="datos_introducidos_usuario" class="inputs_nombre" id="control1_nombre" placeholder="Nombre de usuario" required>
-      </div>
-      <div class="form">
+
+
+
+    <form class="form-horizontal my-2 my-lg-0" method="post" action="archivo_destino.php" enctype="multipart/form-data">
+      <label for="control1_usuario">Usuario</label>
+      <input class="form-control form-control-lg" id="control1_nombre"  type="text" placeholder="Nombre" name="datos_introducidos_usuario" required>
         <label for="control1_contraseña">Contraseña</label>
-        <input type="password" name="datos_introducidos_contraseña" class="inputs" id="control1_contraseña" placeholder="Password" required>
-      </div>
-      <button type="submit" class="btnEntrar">Entrar</button>
+      <input class="form-control form-control-lg" id="control1_contraseña"  type="password" placeholder="Password" name="datos_introducidos_contraseña"  required>
       <br>
-      <a href="registro.php" class="textLink">No tienes cuenta? Registrate</a>
-    </form>
+      <button class="btn btn-outline-info btn-block my-2 my-sm-0 btn-lg" type="submit">Entrar</button>
+      <br>
+    <label>No tienes cuenta?<a href="registro.php" class="textLink"> Registrate</a></label>
+</form>
+
+      </div>
 </div>
 <!--modal para registrarse-->
 
@@ -134,17 +137,17 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script  src="js/login.js"></script>
 
-</div>
+
 
 
 <!--Contenido-->
-<!--footer-->
-<footer class="footer">
-<div class="Empresafooter">
+<!--ftr-->
+<footer class="ftr">
+<div class="Empresaftr">
   <h4>Una Mejor Vida</h4>
 <img class="logo_perrito"src="images/logo.jpg" width="80" height="80"alt="">
 </div>
-<div class="Seccionesfooter">
+<div class="Seccionesftr">
   <h4>Secciones</h4>
   <ul>
    <li><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicio</a></li>
@@ -152,12 +155,12 @@
     <li><a href="login.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicia Sesión</a></li>
   </ul>
 </div>
-<div class="Misionfooter">
+<div class="Misionftr">
   <h4>Como somos</h4>
   <a href="mejorvida.php"><i class="fa fa-paw" aria-hidden="true"></i>
    Misión y Historia</a>
 </div>
-<div class="Redesfooter">
+<div class="Redesftr">
   <h4>Siguenos en:</h4>
   <ul>
     <li class="fbicon"><a href="https://www.facebook.com/unamejorvida.ac/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -166,7 +169,7 @@
   </ul>
 </div>
 </footer>
-<!--footer-->
+<!--ftr-->
 <!--Scripts-->
 
 

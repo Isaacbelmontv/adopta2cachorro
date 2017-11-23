@@ -42,7 +42,7 @@
 
 <div class="Menu">
 <a href="#">
-  <main class='container'>
+  <main class='cntn'>
     <button class='myButt two'>
       Inicio
     </button>
@@ -51,7 +51,7 @@
 
 
 <a href="galeria.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt five'>
       	<div class='layer'>ADOPTA!</div>
       		Galeria
@@ -60,7 +60,7 @@
 </a>
 
 <a href="mejorvida.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       		Una Mejor vida
       	</button>
@@ -68,7 +68,7 @@
 </a>
 
 <a href="login.php">
-      <main class='container'>
+      <main class='cntn'>
       	<button class='myButt two'>
       	Inicia Sesion
       	</button>
@@ -83,10 +83,10 @@
   </div>
   <div class="segundaSeccion">
     <div class="columnaUno">
-      <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funamejorvida.ac%2F&tabs=timeline&width=320&height=350&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <iframe class="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funamejorvida.ac%2F&tabs=timeline&width=320&height=350&small_header=true&adapt_cntn_width=true&hide_cover=true&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
     <div class="columnados">
-      <div class="containertwitter">
+      <div class="cntntwitter">
       		<div class="headertwitter">
       			<div class="bio">
               <img class="imgPortadaTwitter" src="images/portada.jpg" height="171" alt="background" class="bg">
@@ -95,7 +95,7 @@
       					<p>Ac constuida el 2004 a favor del Bienestar Animal y por elllos se alzo la voz para La Ley de proteccion y bienestar d los animales Adopta,Protege y Esteriliza.</p>
       				</div>
       			</div>
-      			<div class="avatarcontainer">
+      			<div class="avatarcntn">
       				<img src="images/logo.jpg" alt="avatar" class="avatar">
       				<div class="hover">
       						<div class="icon-twitter"></div>
@@ -131,7 +131,7 @@
 <div id="overlay">
   <!--Loader-->
 
-  <div class="loader-container">
+  <div class="loader-cntn">
     <svg class="spinner" stroke="#000" width="200" height="200" viewBox="0 0 206 206" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <clipPath id="cut-off-bottom">
@@ -174,13 +174,13 @@
 
 
 <!--Contenido-->
-<!--footer-->
-<footer class="footer">
-<div class="Empresafooter">
+<!--ftr-->
+<footer class="ftr">
+<div class="Empresaftr">
   <h4>Una Mejor Vida</h4>
 <img class="logo_perrito"src="images/logo.jpg" width="80" height="80"alt="">
 </div>
-<div class="Seccionesfooter">
+<div class="Seccionesftr">
   <h4>Secciones</h4>
   <ul>
    <li><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicio</a></li>
@@ -188,12 +188,12 @@
     <li><a href="login.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicia Sesión</a></li>
   </ul>
 </div>
-<div class="Misionfooter">
+<div class="Misionftr">
   <h4>Como somos</h4>
   <a href="mejorvida.php"><i class="fa fa-paw" aria-hidden="true"></i>
    Misión y Historia</a>
 </div>
-<div class="Redesfooter">
+<div class="Redesftr">
   <h4>Siguenos en:</h4>
   <ul>
     <li class="fbicon"><a href="https://www.facebook.com/unamejorvida.ac/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -202,7 +202,7 @@
   </ul>
 </div>
 </footer>
-<!--footer-->
+<!--ftr-->
 
 <!--Scripts-->
 <!--Loader-->

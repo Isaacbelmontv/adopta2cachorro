@@ -4,7 +4,7 @@
       <link rel="shortcut icon" href="images/favicon.ico" />
        <link rel="stylesheet" type="text/css" href="styles/styles.css">
        <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
 
        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
        <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
@@ -39,7 +39,7 @@
 
   <div class="Menu">
   <a href="index.php">
-    <main class='container'>
+    <main class='cntn'>
       <button class='myButt two'>
         Inicio
       </button>
@@ -48,7 +48,7 @@
 
 
   <a href="galeria.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt five'>
         	<div class='layer'>ADOPTA!</div>
         		Galeria
@@ -57,7 +57,7 @@
   </a>
 
   <a href="mejorvida.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt two'>
         		Una Mejor vida
         	</button>
@@ -65,7 +65,7 @@
   </a>
 
   <a href="login.php">
-        <main class='container'>
+        <main class='cntn'>
         	<button class='myButt two'>
         	Inicia Sesion
         	</button>
@@ -80,7 +80,7 @@
       <li class="items">
         <?php
 
-/*
+
                    require_once 'credentials.php'; //ya sabemos que es esto :)
                  $conn = new mysqli($hn, $un, $pw, $db);
                  if ($conn->connect_error){//revisamos errores
@@ -107,8 +107,7 @@
                   $result->close();
                   $conn->close();
 
-          //Con esta funcion obtengo el post del hipervinculo que ejecuta la funcion
-*/
+        
           	?>
 
 
@@ -122,13 +121,13 @@
   </li>
   </div>
 <!--Contenido-->
-<!--footer-->
-<footer class="footer">
-<div class="Empresafooter">
+<!--ftr-->
+<footer class="ftr">
+<div class="Empresaftr">
   <h4>Una Mejor Vida</h4>
 <img class="logo_perrito"src="images/logo.jpg" width="80" height="80"alt="">
 </div>
-<div class="Seccionesfooter">
+<div class="Seccionesftr">
   <h4>Secciones</h4>
   <ul>
    <li><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicio</a></li>
@@ -136,12 +135,12 @@
     <li><a href="login.php"><i class="fa fa-paw" aria-hidden="true"></i>Inicia Sesión</a></li>
   </ul>
 </div>
-<div class="Misionfooter">
+<div class="Misionftr">
   <h4>Como somos</h4>
   <a href="mejorvida.php"><i class="fa fa-paw" aria-hidden="true"></i>
    Misión y Historia</a>
 </div>
-<div class="Redesfooter">
+<div class="Redesftr">
   <h4>Siguenos en:</h4>
   <ul>
     <li class="fbicon"><a href="https://www.facebook.com/unamejorvida.ac/"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
@@ -150,7 +149,7 @@
   </ul>
 </div>
 </footer>
-<!--footer-->
+<!--ftr-->
 <!--Scripts-->
 
 
